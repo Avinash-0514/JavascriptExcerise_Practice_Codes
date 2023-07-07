@@ -46,5 +46,26 @@ let reversed = arrRotate.reverse(),joinedString =reversed.join('');
 console.log(reversed);
 document.getElementById("rotate").textContent = joinedString
 }
-******************************************
 getRotated();
+***********************************************************************
+/* 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.   */
+function findLeapYear(){
+var year;
+let a ="No Value Entered";
+var leap = parseInt(document.getElementById("entYr").value); 
+console.log(leap);
+if (leap/400){
+year = "Its a Leap Year";
+document.getElementById("result").innerHTML= year;
+}else if (leap/100){
+year = "Its is not a Leap Year";
+document.getElementById("result").innerHTML= year;
+}else if (leap/4){
+year = "Its is not a Leap Year";
+document.getElementById("result").innerHTML= year;
+}
+else{
+document.getElementById("result").innerHTML = a
+}
+}
+findLeapYear()
