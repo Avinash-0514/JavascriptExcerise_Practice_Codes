@@ -95,3 +95,23 @@ document.getElementById("getResult").innerHTML +=year +"<br>";
 }
 calculateSundays()
 ***************************************************************************
+ 8. Write a JavaScript program where the program takes a random integer between 1 and 10, 
+	and the user is then prompted to input a guess number. The program displays a message 
+	"Good Work" if the input matches the guess number otherwise "Not matched".  
+ 
+===================================================================	
+function getStarted() {
+    let msg1 = "Win";
+    let msg2 = "Lost";
+    let numVal = parseInt(document.getElementById("playNumber").value);
+  var autoGenVal = Math.floor(Math.random() * 11);  
+    if (autoGenVal === numVal) {
+      document.getElementById("gameResult").innerHTML = msg1;
+    } else {
+      document.getElementById("gameResult").innerHTML = msg2;
+    }
+    document.getElementById("generateRandomNum").innerHTML = autoGenVal;
+    document.getElementById("generateRandomNum").addEventListener("click", getStarted);
+  }
+  getStarted()
+==================================================================================
