@@ -69,3 +69,29 @@ document.getElementById("result").innerHTML = a
 }
 }
 findLeapYear()
+***************************************************************************
+7. Write a JavaScript program to find out if 1st January will be a Sunday between 2014 and 2050.  
+==================
+
+<body>
+  <label>Year1</label>
+  <input type ="textbox" id="year1">
+   <label>Year2</label>
+  <input type ="textbox" id="year2">
+  <button onclick=calculateSundays()>
+  Find
+  </button><span id="getResult"></span>
+</body>
+function calculateSundays(){
+var year = "1st January is being a Sunday "+year;
+let yr1 = parseInt(document.getElementById("year1").value);
+let yr2 = parseInt(document.getElementById("year2").value);
+for(year = yr1;year<= yr2; year++){
+var day = new Date(year,0,1);
+if(day.getDay()===0){
+document.getElementById("getResult").innerHTML +=year +"<br>";
+}
+}
+}
+calculateSundays()
+***************************************************************************
