@@ -114,4 +114,23 @@ function getStarted() {
     document.getElementById("generateRandomNum").addEventListener("click", getStarted);
   }
   getStarted()
-==================================================================================
+*********************************************************
+10. Write a JavaScript program to calculate the multiplication and division of two numbers (input from the user).  
+==============================================	  
+function OnDividing(){
+let first = parseInt(document.getElementById("num1").value);
+let second = parseInt(document.getElementById("num2").value);
+var result1 = first/second;
+console.log(result1);
+document.getElementById("result").innerHTML = result1;
+}
+OnDividing();
+function OnMultiply(){
+let first = parseInt(document.getElementById("num1").value);
+let second = parseInt(document.getElementById("num2").value);
+var result2 = first*second;
+console.log(result2);
+document.getElementById("result").innerHTML = result2;
+}
+OnMultiply();
+*********************************************************
