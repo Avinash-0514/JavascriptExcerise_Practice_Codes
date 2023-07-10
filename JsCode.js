@@ -134,3 +134,24 @@ document.getElementById("result").innerHTML = result2;
 }
 OnMultiply();
 *********************************************************
+
+11.Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  	
+	
+/* [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ] */
+/* f = (9C+(32*5))/5
+c = (5(F-32))/9 */
+
+function calculateFahren(){
+let cel1= parseInt(document.getElementById("celsius").value);
+let far1 = (9*(cel1)+(32*5))/5;
+console.log(far1);
+document.getElementById("fahrenAns").value = far1;
+}
+calculateFahren();
+function calculateCelsius(){
+let far2 = parseInt(document.getElementById("fahren").value);
+let cel2 = (5*(far2-32))/9;
+console.log(cel2);
+document.getElementById("celsiusAns").value = cel2;
+}
+calculateCelsius();
