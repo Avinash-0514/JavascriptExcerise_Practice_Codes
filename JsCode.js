@@ -155,3 +155,19 @@ console.log(cel2);
 document.getElementById("celsiusAns").value = cel2;
 }
 calculateCelsius();
+***************************************************************************************
+Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple the absolute difference if the specified number is greater than 19.
+function sumNum(){
+var n1 = parseInt(document.querySelector("#num1").value);
+var n2 = parseInt(document.querySelector("#num2").value);
+var result ="";
+console.log(n1,n2,result);
+
+if(n1 ==n2){
+result = n1+n2+n1;
+}else{
+result = n1+n2;
+}
+document.querySelector("#ans").innerHTML = result;
+}
+sumNum();
